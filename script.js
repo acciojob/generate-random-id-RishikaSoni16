@@ -2,12 +2,11 @@ const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345678
 function makeid(l) {
   // write your code here
 
-    let result = ' ';
+    let result = '';
     const charactersLength = characters.length;
     for ( let i = 0; i < l; i++ ) {
         result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
-
     return result;
 }
 
